@@ -13,6 +13,6 @@ jobs:
       - uses: micnncim/action-label-syncer@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: tvvignesh/label-master
+          GITHUB_REPOSITORY: tvvignesh/graphql-code-generator
         with:
           manifest: .github/labels.yml
