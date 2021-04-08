@@ -1,0 +1,17 @@
+name: Sync labels
+on:
+  push:
+    branches:
+      - github-labels-1
+    paths:
+      - .github/labels.yml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: tvvignesh/label-master
+          token: ${{ secrets.PERSONAL_TOKEN }}
