@@ -2,7 +2,7 @@
 
 - name: 'core'
   color: '0366d6'
-  description: "Related to codegen's core/cli"
+  description: 'Related to codegen core/cli'
 
 - name: 'dependencies'
   color: 'd4c5f9'
